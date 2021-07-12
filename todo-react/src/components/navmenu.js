@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import App from "./app.js";
+import Todo from "./todo.js";
 
 class Navmenu extends Component{
     constructor(props){
@@ -15,7 +15,7 @@ class Navmenu extends Component{
         const selectedApp = this.state.selectedApp;
         let app;
         if(selectedApp === "todo"){
-            app = <App />;
+            app = <Todo />;
         }
         return(
             <div>

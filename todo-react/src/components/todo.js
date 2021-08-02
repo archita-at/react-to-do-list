@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import { Container, FormControl, InputGroup, Button, ListGroup } from "react-bootstrap";
+import { Container, InputGroup, FormControl, Button, ListGroup } from "react-bootstrap";
 
 class Todo extends Component{
     constructor(props){
@@ -49,10 +49,10 @@ class Todo extends Component{
                 placeholder="Add to-do"
                 value={this.state.userInput}
                 onChange={item => this.updateInput(item.target.value)}/>
-            <InputGroup.Append>
-                <Button
-                onClick={() => this.addItem()}>Add Todo</Button>
-            </InputGroup.Append>
+                <InputGroup.Append>
+                    <Button
+                    onClick={() => this.addItem()}>Add Todo</Button>
+                </InputGroup.Append>
             </InputGroup>
             <ListGroup>
                 {this.state.list.map(item => {return(

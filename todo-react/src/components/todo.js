@@ -49,10 +49,7 @@ class Todo extends Component{
                 placeholder="Add to-do"
                 value={this.state.userInput}
                 onChange={item => this.updateInput(item.target.value)}/>
-                <InputGroup.Append>
-                    <Button
-                    onClick={() => this.addItem()}>Add Todo</Button>
-                </InputGroup.Append>
+                <Button onClick={() => this.addItem()}>Add Todo</Button>
             </InputGroup>
             <ListGroup>
                 {this.state.list.map(item => {return(
